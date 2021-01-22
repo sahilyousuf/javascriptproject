@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var colornames = ["red", "green", "blue", "yellow", "pink"];
+      console.log(colornames);
+
+      var enterColorName = prompt(
+        "enter color name to the add to the beginning"
+      );
+      colornames.unshift(enterColorName);
+      alert(colornames);
+
+      enterColorName = prompt("enter color name to add to end");
+      colornames.push(enterColorName);
+      alert(colornames);
+
+      var colourFirst = prompt("Enter First Colour");
+      var colourSecond = prompt("Enter Second Colour");
+      colornames.unshift(colourFirst, colourSecond);
+      alert(colornames);
+
+      enterColourName = prompt("delete first colour ", "1");
+      colornames.shift(enterColorName);
+      alert(colornames);
+
+      enterColorName = prompt("delete last colour", "1");
+      colornames.pop(enterColorName);
+      alert(colornames);
+
+      var index = prompt("which index you wont to add a colour", "1");
+      var Delete = 0;
+      var addColour = prompt("Colour Name");
+      colornames.splice(index, Delete, addColour);
+      alert(colornames);
+      var indexDelete = prompt("Which index you wont to delete colours", "1");
+      var colourDelete = prompt("how many colour do you want to delete");
+      colornames.splice(indexDelete, colourDelete);
+      alert(colornames);
+    </script>
+  </body>
+</html>

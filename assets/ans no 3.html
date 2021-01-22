@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    body{
+      background-color:  rgba(0,150,200,1);
+    }
+    textarea {
+  color: white;
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(0,0,0,.15);
+  border-color: rgba(0,0,0,.3);
+  border-radius: .2em;
+  box-shadow: transparent 0 .15em .3em;
+  transition: border-color .2s ease-in-out,
+              box-shadow .2s ease-in-out;
+}
+textarea:hover,
+textarea:focus {
+  border-color: rgba(0,150,200,1);
+  box-shadow: rgba(0,150,200,.7) 0 0 .5em;
+}
+  </style>
+</head>
+<body>
+  <h1>Text Case Changer</h1>
+<h2>Reformat text with JavaScript</h2>
+<h2>Input<h2>
+<textarea id=input placeholder="Enter your text here"></textarea>
+<h2>Output<h2>
+<h3>Lowercase</h3>
+<textarea id=lowercase></textarea>
+
+  <script src="app3.js"></script>
+</body>
+</html>
